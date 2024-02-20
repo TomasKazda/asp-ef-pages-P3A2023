@@ -10,5 +10,7 @@ namespace asp_ef_pages.Models
         public string ShortName { get; set; }
         public string Name { get; set; }
         public ICollection<SubjectOnClass> Classes { get; set; }
+
+        public ICollection<Class> Classes2 { get; set; }
     }
 }
