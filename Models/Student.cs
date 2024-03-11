@@ -13,10 +13,11 @@ namespace asp_ef_pages.Models
 
         public string? StudentEmail { get; set; }
 
-        [Required]
+        
         [ForeignKey(nameof(ClassId))]
-        public Class Class { get; set; }
+        public Class? Class { get; set; }
 
+        [Required]
         public int ClassId { get; set; }
     }
 }

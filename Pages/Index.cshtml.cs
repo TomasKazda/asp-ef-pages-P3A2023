@@ -28,7 +28,7 @@ namespace asp_ef_pages.Pages
             //ClassesEnumerable = _context.Classes.Include(c => c.Students).AsEnumerable();
 
             SubjectsOnClasses = _context.SubjectsOnClasses.FirstOrDefault(soc => soc.LinkId == 1);
-            //_context.Entry(SubjectsOnClasses).Reference(soc => soc.Class).Load();
+            _context.Entry(SubjectsOnClasses).Reference(soc => soc.Class).Load();
         }
     }
 }
